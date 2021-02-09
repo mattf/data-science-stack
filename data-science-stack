@@ -236,7 +236,7 @@ EOF
     sudo apt-get -y autoremove
     REBOOT=1
   else
-    nvlog "Automated NVIDIA driver install on Red Hat is not supported."
+    nvlog "Automated NVIDIA driver install not supported on this system type: $OS_FLAVOR $OS_VERSION"
     nvlog "Please install NVIDIA driver $MIN_DRIVER or newer and run again."
     exit 1
   fi
